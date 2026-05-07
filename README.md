@@ -1,107 +1,55 @@
-# 🚀 Talent-IQ
+# 🚀 Talent-IQ-DevOps
 
-A full-stack MERN-based real-time coding interview platform that enables users to collaborate through video calls, live chat, and code execution in a shared environment.
-
----
-
-## 🎓 Academic Project Information
-
-### 📄 Project Report of Industry Oriented Hands-On Experience (IOHE)
-
-**Project Title:** Talent-IQ
-
-Submitted in partial fulfillment of the requirements for the award of degree of:
-
-### 🎓 Bachelor of Engineering  
-Computer Science and Engineering  
-Chitkara University , Rajpura
-
-
----
-
-## 👨‍💻 Submitted By
-
-- **Suman Ranjan** — 2210990872  
-- **Shaurya Thakur** — 2210990817  
-- **Vanshika** — 2210990943  
-- **Swayam Bansal** — 2210990883  
-
----
-
-## 👩‍🏫 Supervised By
-
-- **Dr. Monika Aggarwal**  
-- Assistant Professor, CUIET  
-- Chitkara University, Rajpura  
-
----
-
-## 📊 Project Status
-
-✅ Completed  
-
----
-
-## 📌 Project Type
-
-- Industry Oriented Hands-On Experience (IOHE)  
-- Full Stack + Real-Time Collaboration System  
+A cloud-native MERN-based real-time coding interview platform designed with scalable DevOps architecture using Docker, Kubernetes, AWS ECR, and NGINX Ingress Controller.
 
 ---
 
 ## 🌟 Features
 
-* 🔐 **Authentication (Clerk)**  
-  - Secure and scalable authentication  
-  - Session management & protected routes  
-
-* 🎥 **Real-Time Video Calls**  
-  - Powered by Stream Video SDK  
-  - Smooth group communication  
-
-* 💬 **Live Chat**  
-  - Real-time messaging using Stream Chat  
-
-* 💻 **Online Code Editor**  
-  - Monaco Editor integration  
-  - Multi-language execution using Judge0 API  
-
-* 👥 **Group Interview Rooms**  
-  - Multiple users can join simultaneously  
-
-* ⚡ **Modern UI**  
-  - Tailwind CSS + DaisyUI  
-  - Responsive design  
+- 🔐 Secure Authentication
+- 🎥 Real-Time Video Calling
+- 💬 Live Chat System
+- 💻 Online Code Editor
+- 👥 Group Interview Rooms
+- ⚡ Responsive Modern UI
+- 🐳 Docker Containerization
+- ☸️ Kubernetes Orchestration
+- 📦 AWS ECR Image Management
+- 🌐 NGINX Ingress Load Balancing
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-
-* React (Vite)  
-* Tailwind CSS + DaisyUI  
-* React Query (TanStack)  
-* Monaco Editor  
-* Stream Video & Chat SDK  
-* Clerk React SDK  
+- React.js
+- Tailwind CSS
+- DaisyUI
 
 ### Backend
+- Node.js
+- Express.js
+- MongoDB
 
-* Node.js  
-* Express.js  
-* MongoDB (Mongoose)  
-* Clerk Backend SDK  
-* Stream Node SDK  
-
-### APIs & Services
-
-* Clerk → Authentication  
-* Stream → Video Calls & Chat  
-* Judge0 → Code Execution  
+### DevOps & Cloud
+- Docker
+- Kubernetes
+- AWS ECR
+- NGINX Ingress Controller
 
 ---
 
+## 📂 Architecture
+
+```text
+React Frontend ─┐
+Node Backend ───┼──> Docker Images ──> AWS ECR ──> Kubernetes Cluster
+MongoDB ────────┘                              │
+                                               ▼
+                                    NGINX Ingress Controller
+                                               │
+                                               ▼
+                                             Users
 
 ## 📂 Project Structure
 
