@@ -4,7 +4,7 @@ import { useUser } from "@clerk/clerk-react";
 import { Toaster } from "react-hot-toast";
 import HomePage from "./Pages/HomePage";
 import ProblemsPage from "./Pages/ProblemsPage";
-import DashboardPage from "./Pages/DashBoardPage";
+import DashboardPage from "./Pages/DashboardPage";
 import ProblemPage from "./Pages/ProblemPage";
 import SessionPage from "./Pages/SessionPage";
 
