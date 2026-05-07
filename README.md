@@ -50,13 +50,14 @@ MongoDB ────────┘                              │
                                                │
                                                ▼
                                              Users
+```
 
-
+---
 
 ## 📂 Project Structure
 
-```
-TALENT-Q/
+```text
+TALENT-IQ-DEVOPS/
 │
 ├── Backend/
 │   ├── src/
@@ -66,6 +67,7 @@ TALENT-Q/
 │   │   ├── models/
 │   │   ├── routes/
 │   │   └── server.js
+│   ├── Dockerfile
 │   ├── .env
 │   └── package.json
 │
@@ -83,11 +85,112 @@ TALENT-Q/
 │   │   ├── Pages/
 │   │   ├── App.jsx
 │   │   └── main.jsx
+│   ├── Dockerfile
 │   ├── .env
 │   └── package.json
 │
+├── k8s/
+│   ├── frontend-deployment.yaml
+│   ├── backend-deployment.yaml
+│   ├── mongo-deployment.yaml
+│   ├── services.yaml
+│   └── ingress.yaml
+│
 └── README.md
 ```
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/talent-iq-devops.git
+cd talent-iq-devops
+```
+
+---
+
+## 🐳 Docker Setup
+
+### Build Docker Images
+
+```bash
+docker build -t talent-iq-frontend ./FrontEnd
+docker build -t talent-iq-backend ./Backend
+```
+
+### Run Containers
+
+```bash
+docker run -p 5173:5173 talent-iq-frontend
+docker run -p 5000:5000 talent-iq-backend
+```
+
+---
+
+## ☸️ Kubernetes Deployment
+
+### Apply Kubernetes Configurations
+
+```bash
+kubectl apply -f k8s/
+```
+
+### Check Running Resources
+
+```bash
+kubectl get pods
+kubectl get services
+kubectl get ingress
+```
+
+---
+
+## 📦 AWS ECR Workflow
+
+### Create Repository
+
+```bash
+aws ecr create-repository --repository-name talent-iq
+```
+
+### Push Docker Image
+
+```bash
+docker tag talent-iq-backend:latest <aws-account-id>.dkr.ecr.<region>.amazonaws.com/talent-iq-backend
+
+docker push <aws-account-id>.dkr.ecr.<region>.amazonaws.com/talent-iq-backend
+```
+
+---
+
+## 🔄 DevOps Workflow
+
+1. Build Docker Images
+2. Push Images to AWS ECR
+3. Deploy Containers to Kubernetes
+4. Configure Services & Ingress
+5. Expose Application through NGINX Ingress
+6. Scale Application using Kubernetes
+
+---
+
+## 🚀 Future Enhancements
+
+- 🔄 CI/CD Pipeline using Jenkins & GitHub Actions
+- 📊 Monitoring with Prometheus & Grafana
+- ⚡ Horizontal Pod Autoscaling
+- 📦 Helm Chart Deployment
+- 🔐 Secrets Management
+- ☁️ AWS Cloud Deployment
+
+---
+
+## 👨‍💻 Author
+
+**Suman Ranjan**
 
 ---
 
