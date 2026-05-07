@@ -106,7 +106,7 @@ TALENT-IQ-DEVOPS/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/talent-iq-devops.git
+git clone https://github.com/SumnRanjan/talent-iq-devops.git
 cd talent-iq-devops
 ```
 
